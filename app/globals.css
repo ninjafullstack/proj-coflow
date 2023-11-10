@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h2 {
+    @apply font-bold sm:text-3xl sm:leading-[39px] text-[26px] leading-[33.8px] tracking-tight text-headers;
+  }
+  h3 {
+    @apply text-[26px] leading-[130%] md:text-3xl font-bold;
+  }
+  h6 {
+    @apply font-bold text-base sm:text-sm  sm:leading-[21.8px] leading-[25px] text-headers
+  }
+}
+
+.custom-sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+}
+
+.non-sticky-nav {
+  background-color: transparent;
+}
